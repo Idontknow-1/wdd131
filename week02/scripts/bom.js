@@ -2,14 +2,23 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
-const li = document.createElement('li');
+button.addEventListener('click', function() {
+        const li = document.createElement('li');
+        li.textContent = input.value;
 
-const deleteButton = document.createElement('button');
+    if (input.value.trim() !== '') {
 
-li.textContent = input.ariaValue;
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = '❌';
 
-deleteButton.textContent = '❌';
+        li.append(deleteButton);
+        list.append(li);
 
-li.append(deleteButton);
+        deleteButton.addEventListener('click', function() {
+            list.removeChild(li);
+        });
 
-list.append(li);
+        input.value = '';
+        input.focus();
+    }
+})

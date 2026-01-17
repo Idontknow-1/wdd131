@@ -29,25 +29,22 @@ h1 {
 
 /* Nav */
 nav {
-    display: none;
-    position: absolute;
-    top: 69px;
-    right: 20px;
-    width: 150px;
-    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav.open {
     display: block;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
 }
 
 .navigation {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: var(--secondary-color);
     list-style: none;
-    padding: 0;
+    padding: 10px;
     gap: 0;
 }
 
@@ -56,6 +53,7 @@ nav.open {
 }
 
 .navigation a {
+    display: none;
     color: black;
     text-decoration: none;
     font-size: larger;
@@ -90,6 +88,12 @@ nav.open {
 }
 
 /* clicked button (open/closed) */
+nav.open {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+}
+
 .open a {
     display: block;
 }

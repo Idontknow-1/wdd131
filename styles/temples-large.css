@@ -5,9 +5,7 @@
     }
 
     nav {
-        display: block;
-        position: static;
-        width: 100%;
+        display: flex;
     }
 
     nav a:hover {
@@ -19,12 +17,12 @@
         flex-direction: row;
         justify-content: flex-end;
         gap: 30px;
-        background-color: var(--primary-color);
         padding-right: 20px;
         font-size: 20px;
     }
 
     .navigation a {
+        display: block;
         color: white;
     }
 
@@ -34,6 +32,10 @@
 
     #menu {
         display: none;
+    }
+
+    nav.open {
+        top: -10px;
     }
 
 /* Main */

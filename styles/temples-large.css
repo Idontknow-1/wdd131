@@ -1,0 +1,53 @@
+@media screen and (min-width: 650px) {
+    :root {
+    --primary-color: #4F3B59;
+    --secondary-color: #939196;
+    }
+
+    nav {
+        display: block;
+        position: static;
+        width: 100%;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 30px;
+        background-color: var(--primary-color);
+        padding-right: 20px;
+        font-size: 20px;
+    }
+
+    .navigation a {
+        color: white;
+    }
+
+    .navigation a:hover {
+        padding: 10px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+/* Main */
+    main {
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0;
+    }
+
+    h2 {
+        text-align: center;
+        grid-column: 1 / 4;
+    }
+
+}

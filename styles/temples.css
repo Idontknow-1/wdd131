@@ -37,6 +37,9 @@ nav.open {
     display: block;
     border-radius: 5px;
     background-color: var(--secondary-color);
+    position: absolute;
+    top: 50px;
+    right: 40px;
 }
 
 .navigation {
@@ -88,12 +91,6 @@ nav.open {
 }
 
 /* clicked button (open/closed) */
-nav.open {
-    position: absolute;
-    top: 50px;
-    right: 40px;
-}
-
 .open a {
     display: block;
 }

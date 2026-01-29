@@ -1,0 +1,155 @@
+:root {
+    --primarycolor: #BF4D4Aff;
+    --secondarycolor: #3B3D2Dff;
+    --accent1: #E7DBCAff;
+    --accent2: #979982ff;
+    --center-align: center;
+}
+
+* {
+    margin: 0;
+}
+
+/* Small screen */
+header {
+    background-color: var(--primarycolor);
+    color: var(--accent1);
+    text-align: var(--center-align);
+    padding: 20px;
+    width: auto;
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--accent1);
+}
+
+footer {
+    background-color: var(--primarycolor);
+    color: var(--accent1);
+    text-align: var(--center-align);
+    padding: 10px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: var(--accent2);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.hero img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.data, .weather {
+    padding-bottom: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.data-info, .weather-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem 1rem;
+}
+
+h2, .weather-head {
+    color: var(--secondarycolor);
+    grid-column: 1 / 3;
+    padding: 10px;
+    text-align: var(--center-align);
+}
+
+.icon {
+    width: 50px;
+}
+
+.topic {
+    font-weight: 600;
+    justify-self: end;
+    color: var(--secondarycolor);
+}
+
+.info {
+    color: var(--secondarycolor);
+    justify-self: start;
+}
+
+
+/* Large screen */
+@media screen and (min-width: 600px) {
+    body {
+        background-color: var(--accent2);
+    }
+
+    footer {
+        background-color: var(--secondarycolor);
+        color: var(--accent1);
+    }
+
+    header {
+        background-color: var(--secondarycolor);
+        color: var(--accent1);
+    }
+
+    h2, .weather-head {
+        color: var(--accent1);
+        background-color: var(--primarycolor);
+    }
+
+    .data {
+        position: absolute;
+        background-color: var(--accent1);
+        color: var(--secondarycolor);
+        top: 100px;
+        left: 30px;
+        width: fit-content;
+        font-size: small;
+        opacity: .9;
+    }
+
+    .weather {
+        position: absolute;
+        background-color: var(--accent1);
+        color: var(--secondarycolor);
+        top: 300px;
+        right: 30px;
+        font-size: small;
+        opacity: .9;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .weather-head {
+        display: flex;
+        position: absolute;
+        top: 10px;
+        right: -10px;
+        padding: 0;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .data h2 {
+        position: absolute;
+        width: 200px;
+        left: -15px;
+        top: 10px;
+        text-align: left;
+    }
+
+    .data-info, .weather-info {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: .5rem 1rem;
+        padding: 5px;
+        margin-top: 70px;
+    }
+
+}

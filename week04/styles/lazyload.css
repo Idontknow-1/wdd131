@@ -1,0 +1,38 @@
+* {
+    margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main {
+    background-color: mintcream;
+}
+
+img {
+    display: block;
+    padding: 10px 10px;
+    opacity: 0;
+    animation: fade 5s ease-in-out forwards;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+    color: white;
+    background-color: green;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: green;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

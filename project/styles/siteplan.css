@@ -1,0 +1,39 @@
+:root {
+/* CSS HEX */
+--mauve: #D99BF5ff;
+--ghost-white: #FBF7FDff;
+--lavender-veil: #F4DEFDff;
+--royal-violet: #8708BFff;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    color: black;
+    background-color: var(--lavender-veil);
+    padding: 10px;
+}
+
+main {
+    background-color: var(--ghost-white);
+    padding: 10px;
+    color: var(--royal-violet);
+}
+
+h1, h2 {
+  font-family: "Gabriela", serif;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+}
+
+footer {
+    color: black;
+    background-color: var(--lavender-veil);
+    padding: 10px;
+    text-align: center;
+}

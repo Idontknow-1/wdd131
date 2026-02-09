@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    color: white;
+    background-color: navy;
+    padding: 10px 0;
+    text-align: center;
+}
+main {
+    background-color: #eee;
+}
+
+form {
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.prod-name select, #date, textarea, input[type="name"], button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stars input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.stars input[type="radio"]:checked + span, .stars label:has(input:checked) {
+    color: goldenrod;
+}
+
+.stars label {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.checkboxes label {
+    margin-bottom: 8px;
+}
+
+button {
+    font-weight: 900;
+    font-size: 20px;
+}

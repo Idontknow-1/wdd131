@@ -17,8 +17,8 @@
     </header>
     <main>
         <form method="get" action="review.html">
-            <fieldset>
-                <label for="product">Product Name</label>
+            <fieldset class="prod-name">
+                <label for="product" class="prod-label">Product Name</label>
                 <select name="product" id="product" required>
                     <option value="" disabled selected hidden>Choose a Product</option>
                     <option value="product1">Product 1</option>
@@ -29,23 +29,23 @@
                 <fieldset>
                     <legend>Overall Rating</legend>
                     <div class="stars">
-                        <label><input type="radio" name="stars" value="1star" id="1-star" required>&star;</label>
-                        <label><input type="radio" name="stars" value="2stars" id="2-star">&star; &star;</label>
-                        <label><input type="radio" name="stars" value="3stars" id="3-star">&star; &star; &star;</label>
-                        <label><input type="radio" name="stars" value="4stars" id="4-star">&star; &star; &star; &star;</label>
-                        <label><input type="radio" name="stars" value="5stars" id="5-star">&star; &star; &star; &star; &star;</label>
+                        <label><input type="radio" name="stars" value="1star" id="1-star" required><span>★</span></label>
+                        <label><input type="radio" name="stars" value="2stars" id="2-star"><span>★★</span></label>
+                        <label><input type="radio" name="stars" value="3stars" id="3-star"><span>★★★</span></label>
+                        <label><input type="radio" name="stars" value="4stars" id="4-star"><span>★★★★</span></label>
+                        <label><input type="radio" name="stars" value="5stars" id="5-star"><span>★★★★★</span></label>
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Date of Installation</legend>
                     <input type="date" name="date" id="date" required>
                 </fieldset>
-                <fieldset>
+                <fieldset class="checkboxes">
                     <legend>Which features did you find useful in the product?<br>(Check all that apply)</legend>
-                    <label><input type="checkbox" name="features" value="durability" id="durability" required>Durability</label>
-                    <label><input type="checkbox" name="features" value="ease" id="ease">Ease of Use</label>
-                    <label><input type="checkbox" name="features" value="performance" id="performance">Performance</label>
-                    <label><input type="checkbox" name="features" value="design" id="design">Design</label>
+                    <label><input type="checkbox" name="features" value="durability" id="durability" required> Durability</label>
+                    <label><input type="checkbox" name="features" value="ease" id="ease"> Ease of Use</label>
+                    <label><input type="checkbox" name="features" value="performance" id="performance"> Performance</label>
+                    <label><input type="checkbox" name="features" value="design" id="design"> Design</label>
                 </fieldset>
                 <fieldset>
                     <legend>Written Review (Optional)</legend>
@@ -55,7 +55,9 @@
                     <legend>Your Name (Optional)</legend>
                     <input type="name" name="name" id="name">
                 </fieldset>
-                <button type="submit" value="post">Post Review</button>
+                <fieldset>
+                    <button type="submit" value="post">Post Review</button>
+                </fieldset>
         </form>
     </main>
     <footer>

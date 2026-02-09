@@ -51,7 +51,7 @@ select, #date, textarea, input[type="name"], button {
     align-items: flex-start;
 }
 
-.checkboxes label {
+.checkboxes {
     margin-bottom: 8px;
 }
 

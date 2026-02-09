@@ -19,7 +19,7 @@ form {
     margin: 0 auto;
 }
 
-select, #date, textarea, input[type="name"], button {
+select, #date, textarea, input[type="text"], button {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;

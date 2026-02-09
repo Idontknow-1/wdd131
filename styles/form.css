@@ -19,16 +19,11 @@ form {
     margin: 0 auto;
 }
 
-fieldset {
-    border: none;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.prod-name select, #date, textarea, input[type="name"], button {
+select, #date, textarea, input[type="name"], button {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .stars {
@@ -63,4 +58,6 @@ fieldset {
 button {
     font-weight: 900;
     font-size: 20px;
+    background-color: #333;
+    color: white;
 }

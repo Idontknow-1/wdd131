@@ -24,37 +24,62 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 5px;
+    position: relative;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .navigation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 10px;
-    gap: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 30%;
+    background-color: var(--mauve);
+    z-index: 1000;
+    box-shadow: 0 4px 10px var(--lavender-veil);
+    font-size: 20px;
+}
+
+.navigation.open {
+    display: block;
 }
 
 nav ul {
     list-style: none;
-}
-
-.navigation a {
-    display: none;
-    color: var(--ghost-white);
-    text-decoration: none;
-    font-size: larger;
-    padding: 8px 0;
     text-align: center;
 }
 
+.navigation a {
+    display: block;
+    color: var(--ghost-white);
+    text-decoration: none;
+    font-size: larger;
+    padding: 15px 0;
+}
+
 #menu {
-    position: absolute;
-    right: 30px;
-    font-size: 30px;
-    width: 30px;
+    width: 40px;
+    font-size: 50px;
     background: none;
     border: none;
     color: var(--ghost-white);
+    cursor: pointer;
+}
+
+#menu.open {
+    font-size: 0;
+}
+
+#menu.open::before {
+    content: "✕";
+    color: var(--ghost-white);
+    font-size: 40px;
 }
 
 /* hero slider */

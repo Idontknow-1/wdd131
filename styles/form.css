@@ -36,7 +36,7 @@ select, #date, textarea, input[type="text"], button {
     opacity: 0;
 }
 
-.stars input[type="radio"]:checked + span, .stars label:has(input:checked) {
+.stars input[type="radio"]:checked + span, .stars input:checked + label {
     color: goldenrod;
 }
 

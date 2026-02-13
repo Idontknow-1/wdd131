@@ -20,35 +20,51 @@
             
             <label for="product" class="prod-label">Product Name</label>
             <select name="product" id="product" required>
-                <option value="" disabled selected hidden>Choose a Product</option>
+                <option value="" disabled selected>Select a Product...</option>
             </select>
 
 
             <label>Overall Rating</label>
             <div class="stars">
-                    <label><input type="radio" name="stars" value="1star" id="1-star" required><span>★</span></label>
-                    <label><input type="radio" name="stars" value="2stars" id="2-star" required><span>★★</span></label>
-                    <label><input type="radio" name="stars" value="3stars" id="3-star" required><span>★★★</span></label>
-                    <label><input type="radio" name="stars" value="4stars" id="4-star" required><span>★★★★</span></label>
-                    <label><input type="radio" name="stars" value="5stars" id="5-star" required><span>★★★★★</span></label>
+                <input type="radio" name="stars" value="1star" id="1-star" required>
+                <label for="1-star"><span>★</span></label>
+
+                <input type="radio" name="stars" value="2stars" id="2-star" required>
+                <label for="2-star"><span>★★</span></label>
+
+                <input type="radio" name="stars" value="3stars" id="3-star" required>
+                <label for="3-star"><span>★★★</span></label>
+
+                <input type="radio" name="stars" value="4stars" id="4-star" required>
+                <label for="4-star"><span>★★★★</span></label>
+
+                <input type="radio" name="stars" value="5stars" id="5-star" required>
+                <label for="5-star"><span>★★★★★</span></label>
             </div>
 
                 
-            <label>Date of Installation</label>
+            <label for="date">Date of Installation</label>
             <input type="date" name="date" id="date" required>
 
 
             <label>Which features did you find useful in the product?<br>(Check all that apply)</label>
             <div class="checkboxes">
-                <label><input type="checkbox" name="features" value="durability" id="durability" required> Durability</label>
-                <label><input type="checkbox" name="features" value="ease" id="ease"> Ease of Use</label>
-                <label><input type="checkbox" name="features" value="performance" id="performance"> Performance</label>
-                <label><input type="checkbox" name="features" value="design" id="design"> Design</label>
+                <input type="checkbox" name="features" value="durability" id="durability">
+                <label for="durability">Durability</label>
+                
+                <input type="checkbox" name="features" value="ease" id="ease">
+                <label for="ease">Ease of Use</label>
+                
+                <input type="checkbox" name="features" value="performance" id="performance">
+                <label for="performance">Performance</label>
+                
+                <input type="checkbox" name="features" value="design" id="design">
+                <label for="design">Design</label>
             </div>
 
-            <label>Written Review (Optional)</label>
+            <label for="review">Written Review (Optional)</label>
             <textarea name="review" id="review" rows="5"></textarea>
-            <legend>Your Name (Optional)</legend>
+            <label for="name">Your Name (Optional)</label>
             <input type="text" name="name" id="name">
 
             <button type="submit" value="post">Post Review</button>

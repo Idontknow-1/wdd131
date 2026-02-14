@@ -159,8 +159,32 @@ footer {
 }
 
 /* gallery */
+.nail-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
+.nail-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    break-inside: avoid; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border: 3px solid var(--mauve);
+}
 
+.nail-gallery img:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive Adjustments */
 @media screen and (min-width: 900px) {
     /* home */
     #menu {
@@ -208,4 +232,9 @@ footer {
     }
 
     /* about nails */
+
+    /* gallery */
+    .nail-gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

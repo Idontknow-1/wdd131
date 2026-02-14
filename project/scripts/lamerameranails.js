@@ -26,28 +26,3 @@ const nailForm = document.getElementById('nail-form');
         nailForm.style.display = 'none';
         successMsg.style.display = 'block';
     });
-
-// gallery
-function changeSlide(button, direction) {
-    const container = button.parentElement;
-    const slideWrap = container.querySelectorAll('.slide-wrap');
-    const slides = slideWrap.querySelectorAll('.slide-wrap')
-
-    if (slides.length === 0) return;
-    
-    let currentIndex = 0;
-    slides.forEach((slide, index) => {
-        if (slide.classList.contains('active')) {
-            currentIndex = index;
-        }
-    });
-
-    slides[currentIndex].classList.remove('active');
-    
-    let nextIndex = currentIndex + direction;
-
-    if (nextIndex >= slides.length) nextIndex = 0;
-    if (nextIndex < 0) nextIndex = slides.length - 1;
-
-    slides[nextIndex].classList.add('active');
-}

@@ -21,7 +21,7 @@ body {
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    background-color: var(--lavender-veil);
+    background-color: var(--ghost-white);
     font-family: "Inter", sans-serif;
 }
 
@@ -168,9 +168,10 @@ footer {
     font-size: large;
 }
 
-.table ul li:hover {
+.table ul li:hover, .table ul li:visited {
     text-decoration: underline;
     transform: scale(1.02);
+    color: var(--royal-violet);
 }
 
 .nail-info img {

@@ -305,8 +305,7 @@ button {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
-
-    /* about nails */
+    
     /* gallery */
     .nail-gallery {
         grid-template-columns: 1fr 1fr 1fr;

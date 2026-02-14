@@ -6,6 +6,8 @@
 --royal-violet: #8708BFff;
 }
 
+/* home */
+
 * {
     margin: 0;
     padding: 0;
@@ -145,8 +147,63 @@ footer {
     font-size: 20px;
 }
 
+/* about nails */
+
+#success-msg {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--ghost-white);
+    border: 1px solid var(--mauve);
+
+}
+
+/* gallery */
+.nail-gallery {
+    column-count: 3;
+    column-gap: 15px;
+    padding: 20px;
+}
+
+.nail-gallery img, .slider-wrapper {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    break-inside: avoid;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.next { right: 10px; }
+.prev { left: 10px; }
 
 @media screen and (min-width: 900px) {
+    /* home */
     #menu {
         display: none;
     }
@@ -190,4 +247,6 @@ footer {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
+
+    /* about nails */
 }

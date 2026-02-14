@@ -25,7 +25,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-nails.html">About Nails</a></li>
-                <li><a href="album.html">Work Album</a></li>
+                <li><a href="album.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +37,8 @@
                 <li><a href="#coin">Coin Method</a></li>
                 <li><a href="#kit">Sizing Kit</a></li>
                 <li><a href="#options">Length and Shape Options</a></li>
-                <li><a href="#form">Contact Us</a></li>
+                <li><a href="#pricing">Custom Tiers Available</a></li>
+                <li><a href="#form">Custom Inquiries</a></li>
             </ul>
         </div>
         <img src="images/valentine-petals.webp" alt="heart petal valentine nails" loading="lazy" width="400">
@@ -84,7 +85,7 @@
                 other nail artists.</p>
         </div>
                 </div>
-        <div class="options">
+        <div id="options">
             <h2 id="kit">Length and Shape Options</h2>
             <p>The available lengths are:</p>
             <ul>
@@ -109,8 +110,57 @@
                 order has been started. I use the Apres brand nail tips, which may be consistent with 
                 other nail artists.</p>
         </div>
+        <div>
+            <h2 id="pricing">Custom Tiers Available</h2>
+            <h3>Allium Tier Set: $40.00</h3>
+            <p>Allium Tier is a minimal design set that includes base color with combinations 
+                of glitters, line-work, dot work, chromes, limited rhinestones, simple designs, 
+                limited 3D resin charms*.</p>
+            <h3>Lavender Tier Set: $60.00</h3>
+            <p>Lavender Tier is a simple design set that includes base colors with combinations of 
+                glitters, line-work, dot work, chromes, small rhinestones, semi-intricate designs 
+                and limited 3D charms* (acrylic or resin).</p>
+            <h3>Calla Lily Tier Set: $80.00</h3>
+            <p>Calla Lily Tier is an intricate design set that includes base colors with combinations 
+                of glitters, line-work, dot work, chromes, rhinestones (limited big and small), 
+                semi-intricate designs, 1-2 character designs (2d and 3D) and 3D charms* (acrylic, 
+                metal, or resin).</p>
+            <h3>Delphinium Tier Set: $110.00</h3>
+            <p>Delphinium Tier is a complex design set that includes base colors with combinations 
+                of glitters, line-work, dot work, chromes, rhinestones (big and small), more 
+                intricate designs, 3-4 character designs (2d and 3D, limit 2 each) and 3D charms* 
+                (acrylic, metal, and resin).</p>
+            <h3>Note:</h3>
+            <p>Sets can include all or some mentioned design elements. A prep and application kit 
+                will be included for each set. Containing buffer, cuticle pusher, file, alcohol wipe, 
+                glue and sticky tabs.</p>
+            <p>*3d acrylic charms ex: flowers, hearts, bows, etc. Not characters.</p>
+        </div>
         <div class="custom-order">
-            <form action=""></form>
+            <h2 id="form">Custom Set Inquiry</h2>
+            <form id="nail-form">
+                <label for="name">Full Name: </label><br>
+                <input type="text" id="name" required placeholder="Name"> <br>
+
+                <label for="email">Email Address: </label><br>
+                <input type="email" name="email" id="email" required placeholder="email@example.com"><br>
+
+                <label for="sizing">Select Sizing Method: </label><br>
+                <select name="sizing" id="sizing">
+                    <option value="tier1">Allium Tier Set</option>
+                    <option value="tier1">Lavender Tier Set</option>
+                    <option value="tier1">Calla Lily Tier Set</option>
+                    <option value="tier1">Delphinium Tier set</option>
+                </select><br>
+
+                <label for="details">Design Notes: </label><br>
+                <textarea name="details" id="details" placeholder="Describe your dream set..."></textarea><br>
+
+                <button type="submit" id="button">Send Inquiry</button>
+            </form>
+            <div id="success-msg" >
+                <p>Your inquiry has been sent!</p>
+            </div>
         </div>
     </main>
     <footer>

@@ -24,13 +24,14 @@
         <nav class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about-nails.html">About Nails</a></li>
+                <li><a href="about-nails.html">Nail Information</a></li>
                 <li><a href="album.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="find-size">
+        <div class="nail-info">
+        <div class="table">
             <h2>Table of Contents</h2>
             <ul>
                 <li><a href="#tape">Measuring Tape</a></li>
@@ -41,7 +42,7 @@
                 <li><a href="#form">Custom Inquiries</a></li>
             </ul>
         </div>
-        <img src="images/valentine-petals.webp" alt="heart petal valentine nails" loading="lazy" width="400">
+        <img src="images/valentine-petals.webp" alt="heart petal valentine nails" loading="lazy" width="400" class="border">
         <div class="first-method">
             <h2 id="tape">Measuring Tape</h2>
             <p>You can measure you're nails using a flexible measuring tape with the "mm" side in two ways: </p>
@@ -71,20 +72,19 @@
                 order has been started. I use the Apres brand nail tips, which may be consistent with 
                 other nail artists.</p>
         </div>
-        <div class="third-method">
-            <h2 id="kit">Sizing Kit</h2>
+        <div class="third-method" id="kit">
+            <h2>Sizing Kit</h2>
             <p>Sizing kits are available for a small fee of $5.00. Shipping will not be charged. Once received, 
                 you will try on each nail until you find a comfortable fit. Write down the sizes in the corresponding 
                 areas on the card. For faster processing, you can take a photograph and send it through to the 
                 <a href="mailto:lamerameranails@gmail.com?subject=Sizing Kit Sizes">email</a>.</p>
-            <img src="images/sizing-kit.webp" alt="sizing kit example" loading="lazy" width="400">
+            <img src="images/sizing-kit.webp" alt="sizing kit example" loading="lazy" width="400" class="border">
             <h3>Note:</h3>
             <p>Please make sure you are confident with the sizing. If you are unsure, size up. You are 
                 responsible for the sizes you provide.No refunds or exchanges will be accepted after 
                 order has been started. I use the Apres brand nail tips, which may be consistent with 
                 other nail artists.</p>
         </div>
-                </div>
         <div id="options">
             <h2 id="kit">Length and Shape Options</h2>
             <p>The available lengths are:</p>
@@ -102,16 +102,16 @@
                 <li>Almond</li>
                 <li>stiletto</li>
             </ul>
-            <img src="images/Square - 2.webp" alt="square, coffin, and round nails" loading="lazy" width="400">
-            <img src="images/Square - 3.webp" alt="almond and stiletto nails" loading="lazy" width="400">
+            <img src="images/Square - 2.webp" alt="square, coffin, and round nails" loading="lazy" width="400" class="border">
+            <img src="images/Square - 3.webp" alt="almond and stiletto nails" loading="lazy" width="400" class="border">
             <h3>Note:</h3>
             <p>Please make sure you are confident with the sizing. If you are unsure, size up. You are 
                 responsible for the sizes you provide.No refunds or exchanges will be accepted after 
                 order has been started. I use the Apres brand nail tips, which may be consistent with 
                 other nail artists.</p>
         </div>
-        <div>
-            <h2 id="pricing">Custom Tiers Available</h2>
+        <div id="pricing">
+            <h2>Custom Tiers Available</h2>
             <h3>Allium Tier Set: $40.00</h3>
             <p>Allium Tier is a minimal design set that includes base color with combinations 
                 of glitters, line-work, dot work, chromes, limited rhinestones, simple designs, 
@@ -145,12 +145,14 @@
                 <label for="email">Email Address: </label><br>
                 <input type="email" name="email" id="email" required placeholder="email@example.com"><br>
 
-                <label for="sizing">Select Sizing Method: </label><br>
-                <select name="sizing" id="sizing">
-                    <option value="tier1">Allium Tier Set</option>
-                    <option value="tier1">Lavender Tier Set</option>
-                    <option value="tier1">Calla Lily Tier Set</option>
-                    <option value="tier1">Delphinium Tier set</option>
+                <label for="sizing" class="sizing-methods">Sizing Method: </label><br>
+                <select name="sizing" id="sizing" required>
+                    <option value="" disabled selected hidden>Select a Method...</option>
+                </select><br>
+
+                <label for="tiers" class="tier-set">Tier Set: </label><br>
+                <select name="tiers" id="tiers">
+                    <option value="" disabled selected hidden>Select a Tier...</option>
                 </select><br>
 
                 <label for="details">Design Notes: </label><br>
@@ -162,6 +164,7 @@
                 <p>Your inquiry has been sent!</p>
             </div>
         </div>
+    </div>
     </main>
     <footer>
             <p>&copy;2026 🪷 Iztamaude Mera 🪷 Arizona</p>

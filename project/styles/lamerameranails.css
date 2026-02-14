@@ -22,6 +22,11 @@ body {
     padding: 0;
     width: 100%;
     background-color: var(--lavender-veil);
+    font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4 {
+      font-family: "Gabriela", serif;
 }
 
 /* header and nav */
@@ -49,7 +54,7 @@ header {
     width: 30%;
     background-color: var(--mauve);
     z-index: 1000;
-    box-shadow: 0 4px 10px var(--lavender-veil);
+    box-shadow: 0 4px 10px var(--royal-violet);
     font-size: 20px;
 }
 
@@ -148,6 +153,76 @@ footer {
 }
 
 /* about nails */
+.table, .first-method, .second-method, 
+.third-method, #options, #pricing, 
+.custom-order {
+    color: var(--royal-violet);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.table ul li a, .table ul {
+    text-decoration: none;
+    padding-left: 10px;
+    list-style: none;
+    font-size: large;
+}
+
+.table ul li:hover {
+    text-decoration: underline;
+    transform: scale(1.02);
+}
+
+.nail-info img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+.border {
+    border: 2px solid var(--royal-violet);
+}
+
+#kit p a {
+    color: rgb(92, 49, 113);
+}
+
+#options ul {
+    padding-left: 30px;
+}
+
+#pricing h2, #pricing p {
+    padding-bottom: 10px;
+}
+
+.custom-order {
+    border-radius: 10px;
+    width: 50%;
+    background-color: var(--royal-violet);
+    color: var(--ghost-white);
+    margin-bottom: 20px;
+}
+
+#form {
+    text-decoration: underline;
+}
+
+#nail-form input, #nail-form select, 
+#nail-form textarea {
+    margin-bottom: 10px;
+    width: 75%;
+}
+
+button {
+    width: 50%;
+    padding: 5px;
+    color: var(--royal-violet);
+    font-size: 15px;
+    background-color: var(--ghost-white);
+}
 
 #success-msg {
     display: none;

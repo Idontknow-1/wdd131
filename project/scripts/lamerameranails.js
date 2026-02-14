@@ -9,23 +9,25 @@ menuButton.addEventListener('click', () => {
 
 // nail form
 const nailForm = document.getElementById('nail-form');
-    const successMsg = document.getElementById('success-msg');
+const successMsg = document.getElementById('success-msg');
 
-    nailForm.addEventListener('submit', function(e) {
-        e.preventDefault();
+if(nailForm) {  
+  nailForm.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-        const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            sizing: document.getElementById('sizing').value,
-            notes: document.getElementById('details').value
-        };
+        const nameInput = document.getElementById('name').value;
+        const selectedTier = document.getElementById('tiers').options[document.getElementById('tiers').selectedIndex].text;
 
-        console.log("Form Submitted Successfully!", formData);
+        localStorage.setItem("customerName", nameInput);
+
+        successMsg.innerHTML = 
+        `<h3>Thank you, ${nameInput}!</h3>
+            <p>Your request for the <strong>${selectedTier}</strong> has been received.</p>`;
 
         nailForm.style.display = 'none';
         successMsg.style.display = 'block';
     });
+  }
 
 // sizing options
 const sizing = [
@@ -37,10 +39,10 @@ const sizing = [
 const sizingSelect = document.getElementById("sizing");
 
 if (sizingSelect) {
-  sizing.forEach(sizing => {
+  sizing.forEach(item => {
     const option = document.createElement("option");
     option.value = sizing.id;
-    option.textContent = sizing.name;
+    option.textContent = `${item.name}`;
     sizingSelect.appendChild(option);
   });
 }
@@ -56,10 +58,19 @@ const tiers = [
 const tiersSelect = document.getElementById("tiers");
 
 if (tiersSelect) {
-  tiers.forEach(tiers => {
+  tiers.forEach(item => {
     const option = document.createElement("option");
     option.value = tiers.id;
-    option.textContent = tiers.name;
+    option.textContent = `{item.name}`;
     tiersSelect.appendChild(option);
   });
 }
+
+// localStorage
+window.addEventListener('DOMContentLoaded', () => {
+    const savedName = localStorage.getItem("customerName");
+    
+    if (savedName) {
+        console.log(`Welcome back, ${savedName}! We saved your info from your last visit.`);
+    }
+});
